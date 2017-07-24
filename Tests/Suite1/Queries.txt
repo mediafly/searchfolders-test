@@ -1,0 +1,18 @@
+filename CONTAINS "blue" ORDER BY modified ASC
+filename CONTAINS "red" AND filename CONTAINS "cat" ORDER BY filename ASC
+filename CONTAINS "cat" AND filename CONTAINS "red" ORDER BY filename ASC
+filename CONTAINS "red" AND (filename CONTAINS "cat" OR filename CONTAINS "mp3") ORDER BY modified DESC
+filename CONTAINS "red" AND filename CONTAINS "cat" OR filename CONTAINS "mp3" ORDER BY modified DESC
+filename CONTAINS "mp3" OR filename CONTAINS "red" AND filename CONTAINS "cat" ORDER BY modified DESC
+filename EQUALS "red_cat.mp3" OR filename EQUALS "blue_pig.mp3"
+text CONTAINS "video"
+type EQUALS "video"
+type EQUALS "video" AND type EQUALS "audio"
+type EQUALS "video" AND description CONTAINS "green"
+type EQUALS "audio" AND description CONTAINS "purple"
+type EQUALS "video" AND description CONTAINS "green" OR type EQUALS "audio" AND description CONTAINS "purple"
+type EQUALS "audio" AND description CONTAINS "purple" OR type EQUALS "video" AND description CONTAINS "green"
+type EQUALS "video" AND (description CONTAINS "green" OR type EQUALS "audio") AND description CONTAINS "purple"
+((((((slug EQUALS "mySlug74"))))))
+slug CONTAINS "7" ORDER BY modified ASC
+slug CONTAINS "7" OR filename CONTAINS "blue"
