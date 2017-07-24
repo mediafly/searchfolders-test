@@ -1,1 +1,3 @@
-# My project's README
+# Search folder tests
+
+Welcome to tests for search folders! The purpose of this repo is to create test queries that each platform (iOS, Android, desktop offline and Device API) can run independantly to ensure our defined query language is the same across platforms. The basic idea is that data, queries and the answers to the searched results are uploaded here, to be consumed by each platform's testing mechanism. Each platform must pass all the tests to ensure continuity.
